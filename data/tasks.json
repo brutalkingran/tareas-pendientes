@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Estudiar JavaScript",
+        "description": "Revisar módulos y promesas",
+        "completed": false,
+        "suspended": false
+    },
+    {
+        "id": 2,
+        "title": "Ejercicio",
+        "description": "Correr 30 minutos",
+        "completed": false,
+        "suspended": false
+    }
+]

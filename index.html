@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tareas</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#english">English</a></li>
+            <li><a href="#日本語">日本語</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- 0) ADD TASK -->
+        <div class="add-task-container" hidden>
+            <label>Task Title</label>
+            <input type="text" id="title-input" name="title-input" placeholder="Please add a title">
+            <label>Task Description</label>
+            <textarea name="description-input" id="description-input" placeholder="Please add a description"></textarea>
+            <button>cancel</button>
+            <button>submit</button>
+        </div>
+
+        <!-- 1) POMODORO CLOCK -->
+        <div class="timer-container">
+            <div class="timer">
+                <p id="current-clock-time">25:00</p>
+                <p>CONCENTRATE</p>
+                <P>0/4 (0)</P>
+                <button>Empezar</button>
+                <button disabled>Pausar</button>
+                <button disabled>Reset</button>
+                <button>Skip</button>
+            </div>
+        </div>
+
+        <!-- 2) TASK MENU -->
+        <div>
+            <button>Add Task</button>
+            <button>Available</button>
+            <button>Finished</button>
+            <button>Suspended</button>
+        </div>
+
+        <!-- 3) AVAILABLE TASKS -->
+        <div class="tarea-container">
+            <h2>Tareas Disponibles</h2>
+            <div class="tarea-box">
+                <p class="tarea-titulo">Terminar este diseño</p>
+                <p class="tarea-descripcion">Programar funcionalidad de las tareas.</p>
+                <button>Eliminar</button>
+                <button>Suspender</button>
+                <button>Completado</button>
+            </div>
+            <div class="tarea-box">
+                <p class="tarea-titulo">Terminar este diseño</p>
+                <p class="tarea-descripcion">Programar funcionalidad de las tareas.</p>
+                <button>Eliminar</button>
+                <button>Suspender</button>
+                <button>Completado</button>
+            </div>
+        </div>
+
+        <!-- 4) FINISHED TASKS -->
+        <div class="tarea-container" hidden>
+            <h2>Tareas Terminadas</h2>
+            <div class="tarea-box">
+                <p class="tarea-titulo">Terminar este diseño</p>
+                <p class="tarea-descripcion">Programar funcionalidad de las tareas.</p>
+                <button>Eliminar</button>
+                <button>Suspender</button>
+                <button>Completado</button>
+            </div>
+        </div>
+
+        <!-- 5) SUSPENDED TASKS -->
+        <div class="tarea-container" hidden>
+            <h2>Tareas Suspendidas</h2>
+            <div class="tarea-box">
+                <p class="tarea-titulo">Terminar este diseño</p>
+                <p class="tarea-descripcion">Programar funcionalidad de las tareas.</p>
+                <button>Eliminar</button>
+                <button>Suspender</button>
+                <button>Completado</button>
+            </div>
+        </div>
+
+        <!-- 6) SAVE FUNCTION -->
+        <div class="save-container">
+            <label for="">Import</label>
+            <input type="file" name="" id="" accept="application/json">
+            <button>Import</button>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>Made by <a href="https://github.com/brutalkingran">@brutalkingran</a></p>
+        <p><a href="https://github.com/brutalkingran/tareas-pendientes">Source Code</a></p>
+    </footer>
+
+    <script type="module" src="views/view-timer.js"></script>
+</body>
+</html>
